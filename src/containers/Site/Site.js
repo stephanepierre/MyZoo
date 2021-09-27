@@ -6,6 +6,7 @@ import Accueil from "./Accueil/Accueil";
 import Error from "../../components/Error/Error";
 import Footer from "../../components/Footer/Footer";
 import Application from "./Application/Application";
+import Contact from "../../containers/Site/Contact/Contact"
 
 class Site extends Component {
   render() {
@@ -15,7 +16,7 @@ class Site extends Component {
           <NavBar />
           <Switch>
             <Route path="/" exact render={() => <Accueil />} />
-            <Route path="/contact" exact render={() => <h1>contact</h1>} />
+            <Route path="/contact" exact render={() => <Contact />} />
             <Route path="/animaux" exact render={() => <Application />} />
 
             <Route

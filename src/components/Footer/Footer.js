@@ -15,17 +15,18 @@ const footer = (props) => (
             href="https://www.facebook.com"
             className="d-block"
             target="_blank"
+            rel="noreferrer"
           >
             <img src={facebook} alt="logo facebook" className="imgFB" />
           </a>
         </div>
         <div className="col-3">
-          <a href="https://www.twitter.com" className="d-block" target="_blank">
+          <a href="https://www.twitter.com" className="d-block" target="_blank" rel="noreferrer">
             <img src={twitter} alt="logo twitter" className="imgTwitter" />
           </a>
         </div>
         <div className="col-3">
-          <a href="https://www.youtube.com" className="d-block" target="_blank">
+          <a href="https://www.youtube.com" className="d-block" target="_blank" rel="noreferrer">
             <img src={youtube} alt="logo youtube" className="imgYoutube" />
           </a>
         </div>

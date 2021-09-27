@@ -16,7 +16,8 @@ const animal = (props) => (
       <div className="card-body">
         <h3>
           Famille :
-          <Bouton typeBtn="btn-primary">
+          {/* au clic sur le bouton, ça appelle dans application.js filtreFamille qui appelle idFamille */}
+          <Bouton typeBtn="btn-dark" clic = {() => props.filtreFamille(props.famille.idFamille)} >
             {props.famille.libelleFamille.toUpperCase()}
           </Bouton>
         </h3>
@@ -46,7 +47,12 @@ const animal = (props) => (
               colorBtn = "btn-secondary";
           }
           return (
-            <Bouton typeBtn={colorBtn} css="m-1" key={continent.idContinent}>
+                //au clic sur le bouton, ça appelle dans application.js filtreContinent qui appelle idContinent
+            <Bouton 
+              typeBtn={colorBtn} 
+              css="m-1" 
+              key={continent.idContinent}
+              clic ={() => props.filtreContinent(continent.idContinent)}>
               {continent.libelleContinent}
             </Bouton>
           );
